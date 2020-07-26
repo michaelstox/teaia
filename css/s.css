@@ -1,0 +1,108 @@
+
+input{outline:none;}
+input:focus{border-color:lightblue;}
+a:focus, .link:focus {outline:none;}
+
+html.frost:before {
+	background-size: cover;
+	content: "";
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url(../img/frost.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+#nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+}
+
+.text-blur{
+	text-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: transparent;
+}
+
+.large{
+	font-size:4em;
+}
+
+.top-fit{
+	top:4rem;
+}
+.noise {
+	background-color: lightgray;
+	background-position: center;
+	opacity:0.4;
+}
+.transform-center{
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.checkoutBtn{
+	padding:15px;
+}
+
+.tvBoxLarge {
+	width:50rem;height:50rem;
+}
+.tvBox{
+	width:18rem; height:18rem;
+}
+
+@media screen and (min-width: 50em) {
+	.top-bottom-2-m {
+		top:6rem;
+		right:2rem;
+	}
+	.bottom-right-2-m{
+		bottom:4rem;
+		right:2rem;
+	}
+
+}
+
+@media screen and (max-width: 50em) {
+
+	
+	.top-bottom-2-m, .bottom-right-2-m {
+		bottom:2rem;
+		right:2rem;
+		max-width:80%;
+	}
+
+}
+
+@media screen and (max-width:30em){
+	
+	.tvBox{width:13rem;height:13rem;}
+	.tvBox .w4{width:11rem;}
+	.tvBox .h4{height:11rem;}
+
+	.top-bottom-2-m {
+		right:1rem;
+	}
+	.bottom-right-2-m {
+		right:1rem;
+		bottom:1rem;
+	}
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}

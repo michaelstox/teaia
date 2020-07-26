@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="frost">
+
+<head>
+
+<meta charset="utf-8">
+<title>Discovering the world of teas together | Teaiía</title>
+<meta name="description" content="Tachyons Component">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="@mrmrs">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">  
+<link rel="stylesheet" href="css/tachyons.css">
+<link rel="stylesheet" href="css/s.css">
+<script type="text/javascript" src="js/loader.js"></script>
+
+</head>
+
+<body class="avenir">
+	
+	<nav id="nav"> <script> loader.nav("shop"); </script> </nav>
+
+		<main class="w-100 cf dark-gray bg-white-90 pa3">
+
+			<section id="selectingProducts" class="cf cb flex-l pv5-l pt5 items-center mv5">
+
+				<div class=" tc tl-l ph3">
+
+			  		<h2  id="shopHeader" class="mh6-l f1 fw1 lh-title black-70">A hint of mint • Morning, day, night.</h2>
+
+				  	<div class="flex-l mv5">
+
+				  		<div id="mintMorning" class="mw6 ph6-l ph4-m center-m pb4"></div>
+				  		<div class="tc tl-l ph3">   	
+				    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns ">Mint Awakening</h2>
+				    		<h5 class="mintAwakeningDesc f4 l-copy fw3">A gentle start to your morning with this earl grey and a subtle touch of mint.</h5>
+				    		<div class="eachBag dib ba bg-washed-yellow br3 ph4 pv2">5 $ each 100gr bag </div>
+						</div>
+
+					</div>
+				  	
+				  	<div class="flex-l mv5">
+				  		<div id="mintDay" class="mw6 ph6-l ph4-m center-m pb4"></div>
+				  		<div class="tc tl-l ph3">   	
+				    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns">Mint Revitalize</h2>
+				    		<h5 class="mintRevitalizeDesc f4 l-copy fw3">Refresh and increase your immune system in the day with this revitalizing herbal blend of echinacea and spearmint.</h5>
+				    		<div class="eachBag dib ba bg-washed-yellow br3 ph4 pv2">5 $ each 100gr bag</div>
+						</div>
+					</div>
+
+				  	
+				  	<div class="flex-l mv5">
+				  		<div id="mintNight" class="mw6 ph6-l ph4-m center-m pb4"></div>
+				  		<div class="tc tl-l ph3">   	
+				    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns ">Mint Dreams</h2>
+				    		<h5 class="mintDreamsDesc f4 l-copy fw3">Enjoy a zen-like sleep with this balanced blend of chamomile and spearmint.</h5>
+				    		<div class="eachBag dib ba bg-washed-yellow br3 ph4 pv2">5 $ each 100gr bag</div>
+						</div>
+					</div>
+					  	
+					<h2 id="subNextBtn" class="fr mh6-l f1 fw1 lh-title black-70">
+						<a class="nextBtn pointer ba bg-washed-green hover-bg-light-green br3 pv3 ph3">Next</a>
+					</h2>
+
+				</div>
+
+			</section>
+
+			<section id="viewingCart" style="display:none;" class="cf cb flex-l pv5-l pt5 items-center mv5">
+  				
+  				<div class=" tc tl-l ph3">
+
+				  	<h2 class="yourCart tl bb b--black-30 mh6-l f1 fw1 lh-title black-70 mb0"> Your cart</h2>
+				  	
+				  	<div class="pv1">
+					  
+					  	<div id="mintMorningCart" style="display:none;" class="mh6-l flex-l mv3">
+					  	
+					  		<div  class="tc tl-l">   	
+					    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns ">
+					    			<input type="number" id="mintMorningCartCount" class="w4 mr3 br3 ph1"></input><span id="mintMorningCartText">Mint Awakening</span></h2>
+					    		<div id="mintMorningCartTotal" class="dib ba b--black-30 bg-washed-yellow br3 ph4 pv2"></div>
+								<div id="mintMorningCartRm" class="pointer hover-bg-light-red dib ba bg-washed-red br3 ph4 pv2">✘</div>	    		
+							</div>
+						
+						</div>
+
+					  	<div id="mintDayCart" style="display:none;" class="mh6-l flex-l mv3">
+					  		<div class="tc tl-l">   	
+					    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns">
+					    			<input type="number" id="mintDayCartCount" class="w4 mr3 br3 ph1"></input><span id="mintDayCartText">Mint Revitalize</span></h2>
+					    		<div id="mintDayCartTotal" class="dib ba b--black-30 bg-washed-yellow br3 ph4 pv2"></div>
+					   			<div id="mintDayCartRm" class="pointer hover-bg-light-red dib ba bg-washed-red br3 ph4 pv2">✘</div>	    		
+							</div>
+						</div>
+
+					  	
+					  	<div id="mintNightCart" style="display:none;" class="mh6-l flex-l mv3">
+					  		<div class="tc tl-l">   	
+					    		<h2 class="f2 fw1 lh-title black-70 f-subheadline-m-ns ">
+					    			<input type="number" id="mintNightCartCount" class="w4 mr3 br3 ph1"></input><span id="mintNightCartText">Mint Dreams</span></h2>
+					    		<div id="mintNightCartTotal" class="dib ba b--black-30 bg-washed-yellow br3 ph4 pv2">5 $ each 100gr bag</div>
+					   			<div id="mintNightCartRm" class="pointer hover-bg-light-red dib ba bg-washed-red br3 ph4 pv2">✘</div>	    		
+							</div>
+						</div>
+
+					</div>
+
+				  	<h2 id="cartTotal" class="bt b--black-30 tl mh6-l f1 fw1 lh-title black-70"></h2>
+					
+					<h2 class=" pv5 mh6-l f1 fw1 lh-title black-70">
+						<div class="checkoutBtn"><a id="backSelection" class="hover-bg-yellow pointer ba bg-light-yellow br3 pv3 ph3">Go Back</a></div>
+						<div class="checkoutBtn"><a class="checkout hover-bg-light-green pointer ba bg-washed-green br3 pv3 ph3">Checkout</a></div>
+					</h2>
+
+				  </div>
+
+			</section>
+
+		</main>
+
+	<article id="footer" class="w-100 cf helvetica dark-gray bg-near-white pv5 ph6-l ph3-m"></article>	
+
+</body>
+
+<script src="js/tools.js"></script>
+<script src="js/notifia.js"></script>
+<script src="js/localize.js"></script>
+<script src="js/television.js"></script>
+
+<script src="js/shop.js"></script>
+
+</html>
